@@ -1,3 +1,3 @@
 #!/bin/sh
-heroku ps:scale web=1 --app groceries-app-dk
-heroku ps:scale api=1 --app groceries-server-dk
+git subtree push --prefix client https://git.heroku.com/groceries-app-dk.git master || true
+git subtree push --prefix server https://git.heroku.com/groceries-server-dk.git  master || true
